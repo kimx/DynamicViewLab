@@ -1,0 +1,19 @@
+﻿@model DynamicViewLab.Models.IndexModel
+@section headers{
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+}
+
+<div class="container theme-showcase">
+    <div class="jumbotron">
+        <h1>Theme example : Root</h1>
+        <p>
+            This is a exsample demonstrate that how to implement various theme of views through ThemeRazorViewEngine.
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            @Html.Raw(@Model.Content)
+        </div>
+    </div>
+</div>
+
